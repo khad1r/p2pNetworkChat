@@ -12,8 +12,6 @@ npm install
 
 ### To use:
 
-To initiate a new connection (as a HOST):
-
 ```
 mpm run devStart
 ```
