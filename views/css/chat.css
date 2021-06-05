@@ -1,0 +1,113 @@
+@font-face {
+  font-family: tulisan_keren;
+  src: url(../Fonts/Modeseven.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background-color: #333;
+  font-size: 1.5rem;
+  padding: 0rem 0.25rem;
+  color: #fff;
+  text-shadow: 0 0 10px #ccc;
+  font-family: "tulisan_keren";
+}
+
+#send-container {
+  background-color: #333;
+  position: fixed;
+  padding-bottom: 30px;
+  bottom: 0;
+  width: 80%;
+  display: flex;
+}
+
+#message-input {
+  background-color: #383838;
+  border: none;
+  font-family: inherit;
+  background: inherit;
+  outline: 0;
+  color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #ccc;
+  font-family: "tulisan_keren";
+}
+
+#container {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+#message-container {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: 97%;
+  margin: 1rem 0 5rem 0;
+  padding: 0 1rem 0 1rem;
+}
+
+#burger {
+  position: absolute;
+  right: 1rem;
+  border: 0px;
+  top: 1rem;
+  background-color: transparent;
+  outline-style: none;
+  cursor: pointer;
+}
+
+img.icon {
+  width: 2rem;
+  background-color: transparent;
+}
+
+#room-info {
+  position: absolute;
+  padding: 0.5rem;
+  padding-top: 2rem;
+  max-width: 100%;
+  width: 320px;
+  top: 0px;
+  right: 0px;
+  border-left: 1px solid #555;
+  border-bottom: 1px solid #555;
+  background-color: #333;
+  display: none;
+}
+
+#room-info span {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+  }
+
+  #send-container {
+    width: 95%;
+  }
+
+  #message-container {
+    width: 80%;
+    padding: 0 1rem;
+    margin-top: 3rem;
+  }
+
+  #room-info {
+    width: 100%;
+  }
+}
